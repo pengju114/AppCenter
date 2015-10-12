@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 配置文件，在页面中所有配置都可以通过${cfg.attr}访问 -->
+<!-- 在代码中通过com.pj.web.res.Config.getConfig访问 -->
+<config>
+    
+    <item name="pattern.service.invoker">com.pj.%s.invokers.%sInvoker</item>
+    <item name="pattern.service.resolver">com.pj.%s.resolvers.Resolver%s</item>
+    
+    <item name="debug">true</item>
+    <item name="appName">应用中心</item>
+    <item name="managementSystemName">应用中心管理系统</item>
+    
+</config>
+

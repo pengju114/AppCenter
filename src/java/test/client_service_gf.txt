@@ -1,0 +1,18 @@
+#请求参数，以参数的形式上传
+dataType=JSON 
+service=10001 *
+pageNumber=1
+pageSize=10
+
+#相应数据格式
+Map{
+    header:{
+        statusCode//状态码
+        statusText//状态说明
+        pageCount//页数
+        pageNumber//当前页
+        totalResults//总结果数
+    },
+    result:[
+    ]
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <filter>
+        <filter-name>exectime</filter-name>
+        <filter-class>test.ExecTimeFilter</filter-class>
+    </filter>
+    
+    <filter>
+        <description>后台管理权限校验过滤器</description>
+        <filter-name>AdminAuth</filter-name>
+        <filter-class>com.pj.web.filters.AdminAuthenticationFilter</filter-class>
+    </filter>
+    
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>exectime</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>AdminAuth</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+    <listener>
+        <listener-class>com.pj.web.listeners.ContextListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>ClientServiceServlet</servlet-name>
+        <servlet-class>com.pj.client.core.ClientServiceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidationCodeServlet</servlet-name>
+        <servlet-class>com.pj.utilities.servlets.ValidationCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientServiceServlet</servlet-name>
+        <url-pattern>/client.service</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidationCodeServlet</servlet-name>
+        <url-pattern>/random.jpg</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            120
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

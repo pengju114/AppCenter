@@ -1,0 +1,45 @@
+请求参数:
+    pageNumber:当前页，可选；默认为1。
+    pageSize:每页记录数，可选；默认为10。
+    dataType:返回结果的数据类型，可选；JSON或者XML；默认为JSON。
+    module:模块，可选。
+    service:要访问的服务ID，必填*
+
+普通的POST或GET请求发送参数即可
+
+
+响应结果:
+
+JSON:
+{
+    "result":[{...},...],
+    "header":{
+                "pageCount":1,
+                "totalResults":3,
+                "pageNumber":1,
+                "statusText":"",
+                "statusCode":0
+            }
+}
+
+XML:
+
+<response>
+    <result>
+        <item>
+            <admin_real_name>陆振文</admin_real_name>
+            <admin_sex>1</admin_sex>
+            <admin_phone></admin_phone>
+            <admin_id>1</admin_id>
+            ...
+        </item>
+        ...
+    </result>
+    <header>
+        <pageCount>1</pageCount>
+        <totalResults>3</totalResults>
+        <pageNumber>1</pageNumber>
+        <statusText></statusText>
+        <statusCode>0</statusCode>
+    </header>
+</response>

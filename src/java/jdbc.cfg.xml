@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sql connetions -->
+<datasource>
+    <item name="default">
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <url>jdbc:mysql://127.0.0.1:3306/db_app_center?characterEncoding=utf-8</url>
+        <username>root</username>
+        <password>762354</password>
+        <partition-count>3</partition-count>
+        <max-connections-perpartition>50</max-connections-perpartition>
+        <min-connections-perpartition>10</min-connections-perpartition>
+        <acquire-increment>10</acquire-increment>
+    </item>
+    
+    <!--
+    <item name="default">
+        <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+        <url>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=db_web_core</url>
+        <username>sa</username>
+        <password>762354</password>
+        <partition-count>3</partition-count>
+        <max-connections-perpartition>50</max-connections-perpartition>
+        <min-connections-perpartition>10</min-connections-perpartition>
+        <acquire-increment>10</acquire-increment>
+        <log-enable>true</log-enable>
+    </item>
+
+    <item name="wcs">
+        <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+        <url>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=wcs</url>
+        <username>sa</username>
+        <password>762354</password>
+        <partition-count>3</partition-count>
+        <max-connections-perpartition>10</max-connections-perpartition>
+        <min-connections-perpartition>5</min-connections-perpartition>
+        <acquire-increment>10</acquire-increment>
+        <log-enable>true</log-enable>
+    </item>
+    <item name="SEDB">
+        <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+        <url>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=SEDB</url>
+        <username>sa</username>
+        <password>762354</password>
+        <partition-count>3</partition-count>
+        <max-connections-perpartition>10</max-connections-perpartition>
+        <min-connections-perpartition>5</min-connections-perpartition>
+        <acquire-increment>10</acquire-increment>
+        <log-enable>true</log-enable>
+    </item>
+    -->
+</datasource>
+
+<!-- mysql connetions -->
+<!--
+<datasource>
+    <item name="default">
+        <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <url>jdbc:mysql://127.0.0.1:3306/db_web_core?characterEncoding=utf-8</url>
+        <username>root</username>
+        <password></password>
+        <partition-count>3</partition-count>
+        <max-connections-perpartition>50</max-connections-perpartition>
+        <min-connections-perpartition>10</min-connections-perpartition>
+        <acquire-increment>10</acquire-increment>
+        <log-enable>true</log-enable>
+    </item>
+     
+</datasource>
+-->

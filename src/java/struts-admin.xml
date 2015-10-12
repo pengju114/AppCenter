@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="admin" namespace="/admin" extends="struts-default">
+        <action name="AdminLogin" class="com.pj.admin.actions.AdminLoginAction">
+            <result type="redirect" name="success">/admin/main.jsp</result>
+            <result name="input">/admin.jsp</result>
+        </action>
+        <action name="AdminLogout" method="logout" class="com.pj.admin.actions.AdminLoginAction">
+            <result name="input">/admin.jsp</result>
+        </action>
+        <action name="ListAdmins" method="listAdmins" class="com.pj.admin.actions.FindAdminAction">
+            <result name="success">/admin/fn/admins.jsp</result>
+        </action>
+        <action name="FindAdmin" method="findAdmin" class="com.pj.admin.actions.FindAdminAction">
+            <result name="success">/admin/fn/admins.jsp</result>
+        </action>
+        <action name="AddAdmins" method="addNewAdmin" class="com.pj.admin.actions.AdminOperationAction">
+            <result name="success">/admin/fn/admins.jsp</result>
+            <result name="error">/admin/fn/error.jsp</result>
+            <result name="input">/admin/fn/addAdmin.jsp</result>
+        </action>
+        <action name="AddNewAdmin" method="addNewAdmin" class="com.pj.admin.actions.AdminOperationAction">
+            <result name="success">/admin/fn/addAdmin.jsp</result>
+        </action>
+        
+        <action name="DeleteAdmin" method="deleteAdmin" class="com.pj.admin.actions.AdminOperationAction">
+            <result name="success">/admin/fn/admins.jsp</result>
+        </action>
+    </package>
+</struts>

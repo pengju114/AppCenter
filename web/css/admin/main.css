@@ -1,0 +1,7 @@
+/* CSS Document */
+body { background:#FFF; font-size:12px; color:#075B92;}
+a { text-decoration:none; color:#075B92;}
+
+.table { border:1px solid #5BA8DE; margin-top:5px;}
+.top { background: url(../../images/admin/right_table_bg.jpg) repeat-x left top; height:26px; border-bottom:1px solid #5BA8DE; }
+
