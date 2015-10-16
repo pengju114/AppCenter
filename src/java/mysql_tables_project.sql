@@ -36,30 +36,45 @@ create table if not exists t_app (
     app_version_code bigint,
     app_download_count bigint,
     app_from      nvarchar(100),     -- 来源
-    app_author    nvarchar(200),     -- 开发者
+    app_author    nvarchar(200)     -- 开发者
+);
+
+/** 下载记录表 **/
+create table if not exists t_app_download (
+    download_id        int primary key auto_increment,
+    download_app_id    int not null,     -- 下载app id
+    download_user_id   int,     -- 下载用户ID
+    download_client_ip nvarchar(20),     -- 下载IP
+    download_date      date     -- app简述
 );
 
 /** 软件平台表 **/
 create table if not exists t_platform (
     platform_id        int primary key auto_increment,
-    platform_name      nvarchar(100),     -- 平台名字
+    platform_name      nvarchar(100) not null     -- 平台名字
 );
 
 /** 软件<->软件分类映射表 **/
 create table if not exists t_app_category_mapping(
     mapping_id           int primary key auto_increment,
-    category_id          int,
-    app_id               int
+    category_id          int not null,
+    app_id               int not null,
+
+    foreign key(category_id) references t_app_category(category_id) on delete no action,
+    foreign key(app_id) references t_app(app_id) on delete cascade
 );
 
-/** 软件<->软件平台映射表,一个app可能是多个平台，如java app **/
+/* 软件<->软件平台映射表,一个app可能是多个平台，如java app */
 create table if not exists t_app_platform_mapping(
     mapping_id           int primary key auto_increment,
-    platform_id          int,
-    app_id               int
+    platform_id          int not null,
+    app_id               int not null,
+
+    foreign key(platform_id) references t_platform(platform_id) on delete no action,
+    foreign key(app_id) references t_app(app_id) on delete cascade
 );
 
---创建约束
+
 
 /* 软件截图表 */
 create table if not exists t_app_image(
@@ -71,5 +86,7 @@ create table if not exists t_app_image(
     image_description nvarchar(500),   -- 图片描述
     image_file_name nvarchar(200),     -- 图片文件名
     image_size      int,               -- 图片大小,字节
-    app_id          int
+    app_id          int,
+
+    foreign key(app_id) references t_app(app_id) on delete cascade
 );

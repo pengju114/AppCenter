@@ -222,3 +222,34 @@ create table if not exists t_comment(
     foreign key(article_id) references t_article(article_id) on delete cascade,
     foreign key(comment_author_id) references t_user(user_id) on delete no action
 );
+
+
+
+
+/* 错误表 */
+create table if not exists t_error(
+    error_id        int primary key auto_increment,
+    error_title     nvarchar(100),     
+    error_description  nvarchar(500),    
+    error_level int,  
+    error_code  int,
+    error_stack_trace nvarchar(1000) ,
+    error_module nvarchar(100),
+    error_date  date
+);
+
+
+/* 错误表 */
+create table if not exists t_operation_stream(
+    operation_id        int primary key auto_increment,
+    operation_title     nvarchar(100),     
+    operation_description  nvarchar(500),    
+    operation_type int,   
+    operation_type_name nvarchar(50),
+    operation_status  int,
+    operation_status_text nvarchar(100) ,
+    operation_module nvarchar(100),
+    operation_user_id int,
+    operation_user_type int,
+    operation_date  date
+);
