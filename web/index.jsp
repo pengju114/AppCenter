@@ -3,7 +3,6 @@
     Created on : 2012-7-14, 0:13:20
     Author     : PENGJU
 --%>
-<%@page import="java.util.Enumeration"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 
@@ -11,36 +10,43 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <jsp:include page="/include/deviceSupport.jsp"></jsp:include>
+        <jsp:include page="/include/globalSetting.jsp"></jsp:include>
         <script src="${contextPath}/scripts/pj-2.4.mini.js" type="text/javascript"></script>
-        <link href="${contextPath}/css/default.css"  rel="stylesheet" type="text/css" />
         <link href="${contextPath}/css/base.css"  rel="stylesheet" type="text/css" />
         <title>${cfg.appName}</title>
+        
+        <style type="text/css">
+            iframe{
+                border: none;
+                margin: 0em;
+                padding: 0em;
+            }
+        </style>
     </head>
     <body style="width: auto;">
-        <div id="tool_bar" class="tool_bar"></div>
+        <div id="tool_bar" class="tool_bar">
+            <img src="${contextPath}/images/web/icon.ico"  style="vertical-align: middle;" />
+        </div>
+        
+        <ul id="nav_items">
+            <li>
+                <a href="${contextPath}/index/main.jsp" target="main_content">首页</a>
+            </li>
+            <li>
+                <a href="${contextPath}/admin.jsp" target="main_content">软件</a>
+            </li>
+            <li>
+                <a href="#" target="main_content">游戏</a>
+            </li>
+            <li>
+                <a href="#" target="main_content">推荐</a>
+            </li>
             
+        </ul>
+        <div style="width: 100%; height: auto; clear: both;">
+            <iframe width="100%" height="auto" id="main_content" name="main_content">
+                
+            </iframe>
         </div>
-        <div style="width: 100%; text-align: center;">
-            <div style="width: 50%; border: 1px solid #cccccc; overflow: hidden;">
-                <%
-                    Enumeration<String> headerNames = request.getHeaderNames();
-                    while(headerNames.hasMoreElements()){
-                        String key = headerNames.nextElement();
-                        Enumeration<String> headers = request.getHeaders(key);
-                        while(headers.hasMoreElements()){
-                            out.println(key+"="+headers.nextElement()+" <br />");
-                        }
-                        out.println(" <br />");
-                    }
-                %>
-            </div>
-        </div>
-          
-            <script type="text/javascript">
-                pj("#tool_bar").click(function(){
-                    alert(pj(this).height());
-                });
-            </script>
     </body>
 </html>

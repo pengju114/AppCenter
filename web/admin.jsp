@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <jsp:include page="/include/globalSetting.jsp"></jsp:include>
         <title>无标题文档</title>
         <script type="text/javascript" src="${ pageContext.request.contextPath }/scripts/pj-2.4.mini.js"></script>
         <script type="text/javascript" src="${ pageContext.request.contextPath }/scripts/validator.js"></script>
