@@ -11,9 +11,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <jsp:include page="/include/globalSetting.jsp"></jsp:include>
-        <title>JSP Page</title>
+        <link href="${contextPath}/css/base.css"  rel="stylesheet" type="text/css" />
+        <script src="${contextPath}/scripts/pj-2.4.mini.js" type="text/javascript"></script>
+        <title>推荐</title>
     </head>
     <body>
+        <jsp:include page="/include/header.jsp"></jsp:include>
         <div style="width: 100%; text-align: center; clear: both; height: 100%; background-color: #cccccc;">
             <div style="width: 50%; border: 1px solid #000; overflow: hidden;">
                 <%

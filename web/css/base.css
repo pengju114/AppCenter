@@ -35,3 +35,13 @@
     color: #cc0033;
     background-color: #00cc00;
 }
+
+a.selected{
+    background-color: red;
+}
+
+img.tool_bar_img_item{
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+}

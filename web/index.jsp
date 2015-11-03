@@ -24,29 +24,7 @@
         </style>
     </head>
     <body style="width: auto;">
-        <div id="tool_bar" class="tool_bar">
-            <img src="${contextPath}/images/web/icon.ico"  style="vertical-align: middle;" />
-        </div>
         
-        <ul id="nav_items">
-            <li>
-                <a href="${contextPath}/index/main.jsp" target="main_content">首页</a>
-            </li>
-            <li>
-                <a href="${contextPath}/admin.jsp" target="main_content">软件</a>
-            </li>
-            <li>
-                <a href="#" target="main_content">游戏</a>
-            </li>
-            <li>
-                <a href="#" target="main_content">推荐</a>
-            </li>
-            
-        </ul>
-        <div style="width: 100%; height: auto; clear: both;">
-            <iframe width="100%" height="auto" id="main_content" name="main_content">
-                
-            </iframe>
-        </div>
+        <jsp:include page="/include/header.jsp"></jsp:include>
     </body>
 </html>
