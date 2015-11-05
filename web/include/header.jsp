@@ -7,7 +7,7 @@
                     <table border="0" cellspacing="0" height="100%" width="auto">
                         <tr>
                             <td valign="middle">
-                                <input type="text" name="searchText" style="width: auto; display: none;" />
+                                <input type="text" name="searchText" style="width: auto; display: none; position: relative;" />
                             </td>
                             <td>
                                 <img class="tool_bar_img_item" src="http://www.aguo.com/source/images/search_black.png" id="search_img" />
@@ -47,19 +47,30 @@
                         pj("#"+aID).addClass("selected");
                 }});
                 
+                var field = pj(":forms['search_form']['searchText']");
+                var searchFieldWidth = pj.windowWidth() * 0.3;
+                
                 pj("#search_img").click(function(){
-                    var field = pj(":forms['search_form']['searchText']");
+                    
+                    var border = parseInt(field.css("borderWidth"));
+                    if(isNaN(border)){
+                        border = 0;
+                    }
+                    var w = searchFieldWidth + border * 2;
+
                     if(field.isVisible()){
-                        if(pj.trim(field.value())){
+                        var text = pj.trim(field.value());
+                        
+                        if(text && text.length > 0){
                             // search
                         }else{
                             // hide it
-                            field.animate({opacity:0,width:0,left:("+="+field.width())},function(){ this.css({display:"none"}) });
+                            field.animate({opacity:0,width:0},300,function(){ this.css({display:"none"}) });
                         }
                     }else{
                         // show it
-                        var w = field.width();
-                        field.css({display:"block",width:"0px"}).animate({opacity:1,width:w,left:("-="+w)});
+                        
+                        field.css({display:"block",width:"0px"}).animate({opacity:1,width:w});
                     }
                     
                 });
