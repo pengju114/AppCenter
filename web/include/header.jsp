@@ -25,26 +25,35 @@
         
         <ul id="nav_items">
             <li>
-                <a id="main" href="${contextPath}/index.jsp?page=main" target="_self">首页</a>
+                <a href="${contextPath}/index.jsp" target="_self">首页</a>
             </li>
             <li>
-                <a id="software" href="${contextPath}/index/software.jsp?page=software" target="_self">软件</a>
+                <a href="${contextPath}/index/software.jsp" target="_self">软件</a>
             </li>
             <li>
-                <a id="games" href="${contextPath}/index/games.jsp?page=games" target="_self">游戏</a>
+                <a href="${contextPath}/index/games.jsp" target="_self">游戏</a>
             </li>
             <li>
-                <a id="recommend" href="${contextPath}/index/recommend.jsp?page=recommend" target="_self">推荐</a>
+                <a href="${contextPath}/index/recommend.jsp" target="_self">推荐</a>
             </li>
             
         </ul>
             <script type="text/javascript">
                 pj(window).addListener({"load":function(){
-                        var aID = "${param.page}";
-                        if(!aID){
-                            aID = "main";
+                        var path = location.pathname;
+                        var isMain = true;
+                        var main = pj("#nav_items a").each(function(){
+                            var href = pj(this).attr("href");
+                            var index = path.lastIndexOf("/");
+                            if((index !== -1) && href.lastIndexOf(path.substring(index)) !== -1){
+                                isMain = false;
+                                pj(this).addClass("selected");
+                                return false; // stop iterate
+                            }
+                        }).get(0);
+                        if(isMain){
+                            pj(main).addClass("selected");
                         }
-                        pj("#"+aID).addClass("selected");
                 }});
                 
                 var field = pj(":forms['search_form']['searchText']");

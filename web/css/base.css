@@ -4,6 +4,13 @@
     background-color: #FFF;
 }
 
+img.tool_bar_img_item{
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+}
+
+/* 导航菜单 */
 #nav_items{
     margin: 0em;
     padding: 0em;
@@ -40,26 +47,78 @@ a.selected{
     background-color: red;
 }
 
-img.tool_bar_img_item{
-    width: 1.5em;
-    height: 1.5em;
-    border: none;
+/* 类别部分 */
+.catogery_title{
+    background-color: #ffccff;
+    width: auto;
+}
+
+.catogery_title_text{
+    font-weight: bold;
+    width: auto;
+    margin: 0.5em 0.5em;
 }
 
 a.more{
     float: right;
-    text-combine-upright: none;
     color: #999999;
     font-size:0.75em; 
+    text-decoration: none;
+    margin: 0.5em 0.125em;
+}
+
+
+a.download_button{
+    text-decoration: none;
+}
+
+td.download_button,a.download_button img{
+    width: 2.25em;
+}
+a.download_button img{
+    border:  none;
+    height: 2.25em;
+}
+
+td.app_icon,img.app_icon{
+    width: 4em;
+}
+
+img.app_icon{
+    border:  none;
+    height: 4em;
 }
 
 div.catogery_content{
-    padding: 0.125em 0.25em 0.125em 0.5em;
+    padding: 0em 0.5em;
 }
+div.catogery_content td{
+    padding: 0.5em;
+    word-break: break-all;
+}
+div.catogery_content p{
+    padding: 0px;
+    margin: 0.25em 0px 0px 0px;
+}
+.app_name{
+    font-weight: bold;
+    color: #333333;
+}
+.app_abstract{
+    font-size: 0.875em;
+    color: #666666;
+}
+.item_line{
+    background-color: #CCC;
+    height: 0.0625em;
+    width: 100%;
+    border: none;
+}
+
 
 ul.download_info{
     margin: 0px;
-    padding: 0px;
+    padding: 0.5em 0em;
 }
 
 ul.download_info li{
@@ -67,4 +126,30 @@ ul.download_info li{
     vertical-align: middle;
     float: left;
     list-style-type: none;
+    color: #666666;
+    font-size: 0.75em;
+}
+
+
+/** slider **/
+
+#slider_container{
+        margin:0px;
+        padding:0px;
+        position:relative;
+        float:left;
+        overflow:hidden;
+        width: 100%;
+        height:11.25em;
+}
+#slider_wrapper{
+        margin:0px;
+        position:absolute;
+        left:0px;
+        top:0px;
+}
+#slider_wrapper img{
+        border:none;
+        width:100%;
+        height:11.25em;
 }
