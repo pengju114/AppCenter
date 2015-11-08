@@ -57,6 +57,7 @@ a.selected{
     font-weight: bold;
     width: auto;
     margin: 0.5em 0.5em;
+    float: left;
 }
 
 a.more{
@@ -64,7 +65,7 @@ a.more{
     color: #999999;
     font-size:0.75em; 
     text-decoration: none;
-    margin: 0.5em 0.125em;
+    margin: 0.875em 0.5em;
 }
 
 
