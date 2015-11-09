@@ -38,6 +38,7 @@
             </li>
             
         </ul>
+        <div style="clear: both;"></div>
             <script type="text/javascript">
                 pj(window).addListener({"load":function(){
                         var path = location.pathname;

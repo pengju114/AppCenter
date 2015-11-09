@@ -17,6 +17,7 @@ img.tool_bar_img_item{
     list-style-type: none;
     background-color: #00cc00;
     height: 2.5em;
+    width: 100%;
 }
 
 #nav_items li{
@@ -92,6 +93,8 @@ img.app_icon{
 
 div.catogery_content{
     padding: 0em 0.5em;
+    margin: 0em 0em 0.25em 0em;
+    background-color: #FFF;
 }
 div.catogery_content td{
     padding: 0.5em;
@@ -114,11 +117,13 @@ div.catogery_content p{
     height: 0.0625em;
     width: 100%;
     border: none;
+    opacity: 0.3;
+    filter: alpha(apacity=30);
 }
 
 
 ul.download_info{
-    margin: 0px;
+    margin: 0em;
     padding: 0.5em 0em;
 }
 
@@ -131,6 +136,40 @@ ul.download_info li{
     font-size: 0.75em;
 }
 
+
+.app_item_cub{
+    width: 6.875em;
+    border: 0.0625em solid #EEE;
+    float: left;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.app_item_cub img{
+    width: 6em;
+    height: 6em;
+    border: none;
+}
+.app_item_cub a{
+    text-decoration: none;
+    border: 1px solid #ffccff;
+    color: #ffccff;
+    font-size: 0.75em;
+    padding: 0.25em 1em;
+    
+    /* css3 */
+    border-radius: 0.75em;
+    -moz-border-radius: 0.75em;
+    -webkit-border-radius: 0.75em;
+}
+
+.app_item_cub .app_title{
+    color: #666666;
+    font-weight: bold;
+    font-size: 0.875em;
+    padding: 0.25em;
+}
 
 /** slider **/
 
