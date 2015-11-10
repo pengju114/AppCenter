@@ -83,12 +83,12 @@ a.download_button img{
 }
 
 td.app_icon,img.app_icon{
-    width: 4em;
+    width: 3em;
 }
 
 img.app_icon{
     border:  none;
-    height: 4em;
+    height: 3em;
 }
 
 div.catogery_content{
@@ -138,17 +138,18 @@ ul.download_info li{
 
 
 .app_item_cub{
-    width: 6.875em;
+    width: 4.625em;
     border: 0.0625em solid #EEE;
     float: left;
     padding: 0.5em;
-    margin: 0.5em;
+    margin: 0.25em;
     text-align: center;
+    overflow: hidden;
 }
 
 .app_item_cub img{
-    width: 6em;
-    height: 6em;
+    width: 4em;
+    height: 4em;
     border: none;
 }
 .app_item_cub a{
