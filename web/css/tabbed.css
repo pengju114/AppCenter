@@ -23,9 +23,9 @@
 	 color: #060;
  }
  .tabbed-content-panel{
-	 width:0px;
-	 height:0px;
-         font-size: 0px;
+	 width:100%;
+	 height:auto;
+         font-size: 16px;
 	 border:none;
 	 position:relative;
  }

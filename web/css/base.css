@@ -69,6 +69,9 @@ a.more{
     margin: 0.875em 0.5em;
 }
 
+.clickable{
+    cursor: pointer;
+}
 
 a.download_button{
     text-decoration: none;
