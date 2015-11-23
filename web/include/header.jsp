@@ -42,19 +42,20 @@
             <script type="text/javascript">
                 pj(window).addListener({"load":function(){
                         var path = location.pathname;
-                        var isMain = true;
-                        var main = pj("#nav_items a").each(function(){
+//                        var isMain = true;
+//                        var main = 
+                        pj("#nav_items a").each(function(){
                             var href = pj(this).attr("href");
                             var index = path.lastIndexOf("/");
                             if((index !== -1) && href.lastIndexOf(path.substring(index)) !== -1){
-                                isMain = false;
+//                                isMain = false;
                                 pj(this).addClass("selected");
                                 return false; // stop iterate
                             }
                         }).get(0);
-                        if(isMain){
-                            pj(main).addClass("selected");
-                        }
+//                        if(isMain){
+//                            pj(main).addClass("selected");
+//                        }
                 }});
                 
                 var field = pj(":forms['search_form']['searchText']");

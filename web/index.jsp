@@ -140,7 +140,7 @@
                 <span class="catogery_title_text">精品推荐</span>
                 <div style="clear: both;"></div>
             </div>
-            <div class="catogery_content">
+            <div class="catogery_content test_cub">
                 <div class="app_item_cub">
                     <img src="images/web/test/test_app_icon.jpg" />
                     <div class="app_title">到他传奇</div>
@@ -232,15 +232,15 @@
             });
             
             var tp = new TabbedPanel("categories");
-            for(var i = 0; i< 5; i++){
-                var t = new Tab("系统软件"+i,"内容页优越感的塑化后萨芬飞  哦彩搜 阿森纳才能参加库存爱是从事才可能include卡才能； 才能看出才可能看仓库拿成绩看到你看到你健康是错的可能是 你那次你看看出你看看才 你就看惨才能  卡上就 开车看看书暗示开始开始才能少看少看奥斯卡萨克飒飒出少年开始你看撒卡萨检查呢萨克你上课说说是撒撒是是撒飒飒三十"+i,false);
+            for(var i = 0; i< 10; i++){
+                var t = new Tab("系统软件"+i,pj("div.test_cub").html(),false);
                 tp.add(t);
                 t.afterShow(function(){
-                    if(t.getId() === "1"){
-                        this.loadHTML("${contextPath}/add.jsp",false);
-                    }else{
-                        this.loadHTML("${contextPath}/admin.jsp",false);
-                    }
+//                    if(t.getId() === "1"){
+//                        this.loadHTML("${contextPath}/admin.jsp",false);
+//                    }else{
+//                        this.loadHTML("${contextPath}/xml.jsp",false);
+//                    }
                 });
             }
             

@@ -1,0 +1,124 @@
+#nav{
+    font-size: 0.75em;
+    margin: 0.5em;
+}
+#nav span{
+    color: #666666;
+}
+#nav a{
+    text-decoration: none;
+    color: #666666;
+}
+#nav a:hover{
+    text-decoration: underline;
+    color: #999999;
+}
+
+.detail-info-list{
+    padding: 0em;
+    margin: 0em;
+    list-style-type: none;
+    clear: both;
+}
+
+.detail-info-list li{
+    float: left;
+    font-size: 0.75em;
+    color: #666666;
+    padding: 0.25em 0.5em;
+    vertical-align: middle;
+}
+#star,#info{
+    margin-left: -0.125em;
+}
+
+#tags li{
+    padding-left: 1.4em;
+    background: url(../images/web/res-tag-good.png) no-repeat 0px 0px;
+}
+#star-ctr{
+    background: url(../images/web/stars.png) no-repeat 0px -56px;
+    width: 6em;
+    height: 20px;
+}
+#star-rate{
+    background: url(../images/web/stars.png) no-repeat 0px -36px;
+    width: 83%;
+    height: 100%;
+}
+img.detail-app-icon{
+    border: none;
+    width: 4.5em;
+    height: 4.5em;
+    margin: 0.5em;
+}
+.detail-container{
+    padding: 0.5em;
+}
+#download{
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+#download *{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #C06;
+    background-color: #ffcccc;
+    padding: 0.5em 0em;
+    text-decoration: none;
+}
+
+
+.app-description{
+    border: 0.0625em solid #EEE;
+    padding: 0.5em;
+    margin: 1em 0px 1em 8px;
+    width: content-box;
+}
+
+.gray-line{
+    height: 0em;
+    width: 100%;
+    border-bottom: 0.0625em dashed #EEE;
+    clear: both;
+    margin: 0.5em 0em;
+}
+
+.info-title{
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+}
+.info-text{
+    font-size: 0.875em;
+    color: #666666;
+    line-height: 1.375em;
+}
+
+#info-screenshot{
+    width: 100%;
+    height: 21.75em;
+    overflow-x: scroll;
+}
+
+#info-screenshot img{
+    border: 0.0625em solid #DDD;
+    padding: 0.0625em;
+    margin: 0.5em;
+    width: 11.25em;
+    height: 20em;
+}
+
+.info-text-gap{
+    margin: 0.5em 0em;
+    word-break: break-all;
+}
+
+#span-collapse{
+    font-size: 0.625em;
+    color: #666;
+}

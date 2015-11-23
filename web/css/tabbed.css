@@ -25,6 +25,7 @@
  .tabbed-content-panel{
 	 width:100%;
 	 height:auto;
+         min-height: 12.5em;
          font-size: 16px;
 	 border:none;
 	 position:relative;
