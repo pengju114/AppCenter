@@ -81,8 +81,10 @@
             <div>
                 <span class="info-title">应用介绍：</span>
                 <div style=" position: relative;">
-                    <div id="info-text-description" class="info-text info-text-gap">shit你妹的，垃圾，shit你妹的，垃圾，shit你妹的，垃圾，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，。</div>
-                    <div style=" position: absolute; right: 10px; bottom: 0px;" id="span-collapse">展开</div>
+                    <div id="info-text-description" class="info-text info-text-gap">shit你妹的，垃圾，shit你妹的，垃圾，<br />shit你妹的，垃圾，shit你妹的，<br />&nbsp;&nbsp;垃圾，shit你妹的，垃圾，<br />shit你shit你妹的，，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，\nshit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit\n你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，
+                        shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，
+                        垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的。</div>
+                    <div style=" position: absolute; right: 10px; bottom: 0px; cursor: pointer;" id="span-collapse">展开</div>
                 </div>
                 <div class="gray-line"></div>
             </div>
@@ -105,6 +107,12 @@
            
            
            (function(){
+               
+               var cacheContentKey = "cache-content";
+               var spanStateKey = "cache-state";
+               var stateSpan = 1;
+               var stateCollapse = 0;
+               
                var getLines = function(obj){
                    var lineHeight = parseInt(pj(obj).css("line-height"));
                     if(isNaN(lineHeight)){
@@ -120,12 +128,79 @@
                     return lines;
                };
                
-               pj("#info-text-description").click(function(){
-                    var lines = getLines(this);
+               var collapseContent = function(obj){
+                   var lines = getLines(obj);
                     if(lines > 3){// 超过3行就省略后面的；
+                        // 先缓存原始文本
+                        var target = pj(obj);
+                        if(!target.attr(cacheContentKey)){
+                            target.attr(cacheContentKey,target.html());
+                        }
                         
+                        // 先去掉内容中的标签
+                        var content = target.html();
+                        var breakLineRegexp = /<br\s*\/>/ig;
+                        var whiteSpaceRegexp = /&nbsp;/ig;
+                        content = content.replace(breakLineRegexp,"\n");
+                        content = content.replace(whiteSpaceRegexp," ");
+                        
+                        target.html(content);
+                        
+                        lines = getLines(obj);
+                        var w = target.width();
+                        var p = parseInt(target.css("padding-left") + target.css("padding-right") + target.css("border-width"));
+                        if(isNaN(p)){
+                            p=0;
+                        }
+                        w -= p;
+                        var fontWidth = (lines * w) / content.length;
+                        // 保留2.5行
+                        var leftChar = Math.floor((2.5 * w) / fontWidth);
+                        if(content.length > leftChar){
+                            target.html(content.substr(0,leftChar)+"...");
+                            target.attr(spanStateKey,stateCollapse+"");
+                            onSpanStateChange(obj,stateCollapse);
+                        }
                     }
-                });
+               }
+               
+               var spanContent = function(obj){
+                   var target = pj(obj);
+                   var originContent = target.attr(cacheContentKey);
+                   if(originContent){
+                       var breakRegexp = /\n/ig;
+                       var whiteSpaceRegexp = /\s/g;
+                       originContent = originContent.replace(whiteSpaceRegexp,"&nbsp;");
+                       originContent = originContent.replace(breakRegexp,"<br />");
+                       target.html(originContent);
+                       target.attr(spanStateKey,stateSpan+"");
+                       onSpanStateChange(obj,stateSpan);
+                   }
+               };
+               
+               var onSpanStateChange = function(obj,state){
+                   var button = "";
+                   if(state === stateCollapse){
+                       button = "展开";
+                   }else{
+                       button = "收起";
+                   }
+                   pj("#span-collapse").html(button);
+               };
+               
+               var toggleSpan = function(obj){
+                   if(parseInt(pj(obj).attr(spanStateKey)) === stateSpan){
+                        collapseContent(obj);
+                    }else{
+                        spanContent(obj);
+                    }
+               };
+               
+               var initSpanObj = pj("#info-text-description,#span-collapse").click(function(){
+                    toggleSpan(pj.id("info-text-description"));
+                }).get(0);
+                
+                collapseContent(initSpanObj);
            })();
            
         </script>
