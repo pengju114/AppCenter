@@ -81,9 +81,10 @@
             <div>
                 <span class="info-title">应用介绍：</span>
                 <div style=" position: relative;">
-                    <div id="info-text-description" class="info-text info-text-gap">shit你妹的，垃圾，shit你妹的，垃圾，<br />shit你妹的，垃圾，shit你妹的，<br />&nbsp;&nbsp;垃圾，shit你妹的，垃圾，<br />shit你shit你妹的，，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，\nshit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit\n你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，
-                        shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，
-                        垃圾，shit你妹的，垃圾，shit你shit你妹的，shit你妹的，垃圾，shit你妹的，垃圾，shit你shit你妹的。</div>
+                    <div id="info-text-description" class="info-text info-text-gap">
+                        1、爱奇艺视频全网独播：奔跑吧兄弟3！
+                        2、跑男3全网独播：七兄弟挑战吉尼斯，有点意思；
+                    </div>
                     <div style=" position: absolute; right: 10px; bottom: 0px; cursor: pointer;" id="span-collapse">展开</div>
                 </div>
                 <div class="gray-line"></div>
@@ -128,9 +129,21 @@
                     return lines;
                };
                
+               var addHTMLNewlinesAndSpaces = function(string){
+                   if(string && pj.isString(string)){
+                       var breakRegexp = /\n|\r/ig;
+                       var whiteSpaceRegexp = /\s/g;
+                       string = string.replace(breakRegexp,"<br/>");
+                       string = string.replace(whiteSpaceRegexp,"&nbsp;");
+                       
+                       return string;
+                   }
+                   return string;
+               };
+               
                var collapseContent = function(obj){
                    var lines = getLines(obj);
-                    if(lines > 3){// 超过3行就省略后面的；
+//                    if(lines > 3){// 超过3行就省略后面的；
                         // 先缓存原始文本
                         var target = pj(obj);
                         if(!target.attr(cacheContentKey)){
@@ -139,9 +152,9 @@
                         
                         // 先去掉内容中的标签
                         var content = target.html();
-                        var breakLineRegexp = /<br\s*\/>/ig;
+                        var breakLineRegexp = /<[^\s>]+\s*\/?>/ig;
                         var whiteSpaceRegexp = /&nbsp;/ig;
-                        content = content.replace(breakLineRegexp,"\n");
+                        content = content.replace(breakLineRegexp,'\n');
                         content = content.replace(whiteSpaceRegexp," ");
                         
                         target.html(content);
@@ -160,18 +173,20 @@
                             target.html(content.substr(0,leftChar)+"...");
                             target.attr(spanStateKey,stateCollapse+"");
                             onSpanStateChange(obj,stateCollapse);
+                        }else{
+                            target.html(content);
+                            target.attr(spanStateKey,stateCollapse+"");
+                            onSpanStateChange(obj,stateCollapse);
                         }
-                    }
+//                    }
                }
                
                var spanContent = function(obj){
                    var target = pj(obj);
                    var originContent = target.attr(cacheContentKey);
                    if(originContent){
-                       var breakRegexp = /\n/ig;
-                       var whiteSpaceRegexp = /\s/g;
-                       originContent = originContent.replace(whiteSpaceRegexp,"&nbsp;");
-                       originContent = originContent.replace(breakRegexp,"<br />");
+                       originContent = addHTMLNewlinesAndSpaces(originContent);
+                       
                        target.html(originContent);
                        target.attr(spanStateKey,stateSpan+"");
                        onSpanStateChange(obj,stateSpan);
@@ -196,9 +211,12 @@
                     }
                };
                
-               var initSpanObj = pj("#info-text-description,#span-collapse").click(function(){
+               var initSpanObj = pj("#info-text-description").click(function(){
                     toggleSpan(pj.id("info-text-description"));
-                }).get(0);
+                }).html(addHTMLNewlinesAndSpaces(pj("#info-text-description").html())).get();
+                pj("#span-collapse").click(function(){
+                    toggleSpan(pj.id("info-text-description"));
+                });
                 
                 collapseContent(initSpanObj);
            })();
