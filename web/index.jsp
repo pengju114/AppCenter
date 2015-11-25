@@ -205,7 +205,7 @@
                     padding += ptmp;
                 }
 
-                borderWidth + padding;
+                borderWidth += padding;
 
                 var slider = new Slider("slider_container", "slider_wrapper", pj("#slider_wrapper img").css({width: (pj.windowWidth() - borderWidth) + "px"}).click(function () {
                     this.blur();

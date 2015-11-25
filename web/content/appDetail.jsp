@@ -91,17 +91,18 @@
             </div>
 
             <div>
-                <span class="info-title">别人还用了：</span>
+                <span class="info-title">相关推荐：</span>
+                <div class="gray-line"></div>
                 <div class="catogery_content">
                     <table border="0" width="100%">
                         <tr>
-                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
                             <td align="left" valign="top">
                                 <span class="app_name">到他传奇</span>
                                 <p class="app_abstract">
                                     dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
                                 </p>
-                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
                         </tr>
                     </table>
                     <div class="item_line"></div>
@@ -116,13 +117,13 @@
                 <div class="catogery_content">
                     <table border="0" width="100%">
                         <tr>
-                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
                             <td align="left" valign="top">
                                 <span class="app_name">到他传奇</span>
                                 <p class="app_abstract">
                                     dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
                                 </p>
-                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
                         </tr>
                     </table>
                     <div class="item_line"></div>
@@ -137,13 +138,13 @@
                 <div class="catogery_content">
                     <table border="0" width="100%">
                         <tr>
-                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
                             <td align="left" valign="top">
                                 <span class="app_name">到他传奇</span>
                                 <p class="app_abstract">
                                     dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
                                 </p>
-                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
                         </tr>
                     </table>
                     <div class="item_line"></div>
@@ -154,18 +155,17 @@
                     </ul>
                     <div style="clear: both;"></div>
                 </div>
-
 
                 <div class="catogery_content">
                     <table border="0" width="100%">
                         <tr>
-                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
                             <td align="left" valign="top">
                                 <span class="app_name">到他传奇</span>
                                 <p class="app_abstract">
                                     dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
                                 </p>
-                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
                         </tr>
                     </table>
                     <div class="item_line"></div>
@@ -176,18 +176,17 @@
                     </ul>
                     <div style="clear: both;"></div>
                 </div>
-
 
                 <div class="catogery_content">
                     <table border="0" width="100%">
                         <tr>
-                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
                             <td align="left" valign="top">
                                 <span class="app_name">到他传奇</span>
                                 <p class="app_abstract">
                                     dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
                                 </p>
-                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
                         </tr>
                     </table>
                     <div class="item_line"></div>
@@ -198,6 +197,69 @@
                     </ul>
                     <div style="clear: both;"></div>
                 </div>
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="${contextPath}/images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="${contextPath}/images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
                 <div class="gray-line"></div>
             </div>
         </div>
