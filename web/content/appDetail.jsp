@@ -26,12 +26,12 @@
     <body style="width: auto; background-color: #fff;">
         <jsp:include page="/include/header.jsp"></jsp:include>
 
-        <div id="nav"> <span><a href="#">游戏</a></span> <span>></span> <span><a href="#">修真</a></span> <span>></span> <span><a href="#">到他传奇</a></span></div>
-        
-        <table border="0" cellspacing="0">
-            <tr>
-                <td valign="top" style="width: 5em;">
-                    <img class="detail-app-icon" src="${contextPath}/images/web/test/test_app_icon.jpg" />
+            <div id="nav"> <span><a href="#">游戏</a></span> <span>></span> <span><a href="#">修真</a></span> <span>></span> <span><a href="#">到他传奇</a></span></div>
+
+            <table border="0" cellspacing="0">
+                <tr>
+                    <td valign="top" style="width: 5em;">
+                        <img class="detail-app-icon" src="${contextPath}/images/web/test/test_app_icon.jpg" />
                 </td>
                 <td class="detail-container" valign="top">
                     <h4>到他传奇</h4>
@@ -57,7 +57,7 @@
                 </td>
             </tr>
         </table>
-                
+
         <div id="download"><div>马上安装</div></div>
         <div id="app-description" class="app-description">
             <div>
@@ -77,7 +77,7 @@
                     </tr>
                 </table>
             </div>
-                    
+
             <div>
                 <span class="info-title">应用介绍：</span>
                 <div style=" position: relative;">
@@ -89,138 +89,249 @@
                 </div>
                 <div class="gray-line"></div>
             </div>
+
+            <div>
+                <span class="info-title">别人还用了：</span>
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+
+
+                <div class="catogery_content">
+                    <table border="0" width="100%">
+                        <tr>
+                            <td class="app_icon" align="left" valign="top"><img class="app_icon" src="images/web/test/test_app_icon.jpg" /></td>
+                            <td align="left" valign="top">
+                                <span class="app_name">到他传奇</span>
+                                <p class="app_abstract">
+                                    dxcfvgybhxdcfvgbhjcyfvgbhxrctfvugybihunzsextdcyftvugybihunojxdcfvgbhfgvbhnjcfvgbhcfvugbhnxcytvygbiuhnij
+                                </p>
+                            <td class="download_button" align="right" valign="middle"><a class="download_button" href="#"><img src="images/web/icon_download.png" /></a></td>
+                        </tr>
+                    </table>
+                    <div class="item_line"></div>
+                    <ul class="download_info">
+                        <li><center>3456M</center></li>
+                        <li><center>456789次下载</center></li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="gray-line"></div>
+            </div>
         </div>
-        
+
         <script type="text/javascript">
-            var gap = parseInt(pj("#app-description").css("padding-left")) + parseInt(pj("#app-description").css("padding-right")) + parseInt(pj("#app-description").css("margin-left")) + parseInt(pj("#app-description").css("margin-right")) + parseInt(pj("#app-description").css("border-width"))*2;
-            if(isNaN(gap)){
+            var gap = parseInt(pj("#app-description").css("padding-left")) + parseInt(pj("#app-description").css("padding-right")) + parseInt(pj("#app-description").css("margin-left")) + parseInt(pj("#app-description").css("margin-right")) + parseInt(pj("#app-description").css("border-width")) * 2;
+            if (isNaN(gap)) {
                 gap = 0;
             }
-           pj("#app-description").css({width:(pj.windowWidth()- 8 - gap)+"px",overflow:"hidden"});
-           pj(window).resize(function(){
-               pj("#app-description").css({width:(pj.windowWidth()- 8 - gap)+"px"});
-           });
-           
-           pj("#download *").click(function(){
-               var bgColor = "#ffcccc";//pj(this).css("background-color");
-               pj(this).css({"background-color":"#FFAAAA"}).animate({"background-color":bgColor});
-           });
-           
-           
-           (function(){
-               
-               var cacheContentKey = "cache-content";
-               var spanStateKey = "cache-state";
-               var stateSpan = 1;
-               var stateCollapse = 0;
-               
-               var getLines = function(obj){
-                   var lineHeight = parseInt(pj(obj).css("line-height"));
-                    if(isNaN(lineHeight)){
+            pj("#app-description").css({width: (pj.windowWidth() - 8 - gap) + "px", overflow: "hidden"});
+            pj(window).resize(function () {
+                pj("#app-description").css({width: (pj.windowWidth() - 8 - gap) + "px"});
+            });
+
+            pj("#download *").click(function () {
+                var bgColor = "#ffcccc";//pj(this).css("background-color");
+                pj(this).css({"background-color": "#FFAAAA"}).animate({"background-color": bgColor});
+            });
+
+
+            (function () {
+
+                var cacheContentKey = "cache-content";
+                var spanStateKey = "cache-state";
+                var stateSpan = 1;
+                var stateCollapse = 0;
+
+                var getLines = function (obj) {
+                    var lineHeight = parseInt(pj(obj).css("line-height"));
+                    if (isNaN(lineHeight)) {
                         lineHeight = 1;
                     }
                     var totalHeight = pj(obj).height();
                     var padding = parseInt(pj(obj).css("padding-top")) + parseInt(pj(obj).css("padding-bottom"));
-                    if(isNaN(padding)){
+                    if (isNaN(padding)) {
                         padding = 0;
                     }
                     totalHeight -= padding;
                     var lines = Math.round(totalHeight / lineHeight);
                     return lines;
-               };
-               
-               var addHTMLNewlinesAndSpaces = function(string){
-                   if(string && pj.isString(string)){
-                       var breakRegexp = /\n|\r/ig;
-                       var whiteSpaceRegexp = /\s/g;
-                       string = string.replace(breakRegexp,"<br/>");
-                       string = string.replace(whiteSpaceRegexp,"&nbsp;");
-                       
-                       return string;
-                   }
-                   return string;
-               };
-               
-               var collapseContent = function(obj){
-                   var lines = getLines(obj);
+                };
+
+                var addHTMLNewlinesAndSpaces = function (string) {
+                    if (string && pj.isString(string)) {
+                        var breakRegexp = /\n|\r/ig;
+                        var whiteSpaceRegexp = /\s/g;
+                        string = string.replace(breakRegexp, "<br/>");
+                        string = string.replace(whiteSpaceRegexp, "&nbsp;");
+
+                        return string;
+                    }
+                    return string;
+                };
+
+                var collapseContent = function (obj) {
+                    var lines = getLines(obj);
 //                    if(lines > 3){// 超过3行就省略后面的；
-                        // 先缓存原始文本
-                        var target = pj(obj);
-                        if(!target.attr(cacheContentKey)){
-                            target.attr(cacheContentKey,target.html());
-                        }
-                        
-                        // 先去掉内容中的标签
-                        var content = target.html();
-                        var breakLineRegexp = /<[^\s>]+\s*\/?>/ig;
-                        var whiteSpaceRegexp = /&nbsp;/ig;
-                        content = content.replace(breakLineRegexp,'\n');
-                        content = content.replace(whiteSpaceRegexp," ");
-                        
+                    // 先缓存原始文本
+                    var target = pj(obj);
+                    if (!target.attr(cacheContentKey)) {
+                        target.attr(cacheContentKey, target.html());
+                    }
+
+                    // 先去掉内容中的标签
+                    var content = target.html();
+                    var breakLineRegexp = /<[^\s>]+\s*\/?>/ig;
+                    var whiteSpaceRegexp = /&nbsp;/ig;
+                    content = content.replace(breakLineRegexp, '\n');
+                    content = content.replace(whiteSpaceRegexp, " ");
+
+                    target.html(content);
+
+                    lines = getLines(obj);
+                    var w = target.width();
+                    var p = parseInt(target.css("padding-left") + target.css("padding-right") + target.css("border-width"));
+                    if (isNaN(p)) {
+                        p = 0;
+                    }
+                    w -= p;
+                    var fontWidth = (lines * w) / content.length;
+                    // 保留2.5行
+                    var leftChar = Math.floor((2.5 * w) / fontWidth);
+                    if (content.length > leftChar) {
+                        target.html(content.substr(0, leftChar) + "...");
+                        target.attr(spanStateKey, stateCollapse + "");
+                        onSpanStateChange(obj, stateCollapse);
+                    } else {
                         target.html(content);
-                        
-                        lines = getLines(obj);
-                        var w = target.width();
-                        var p = parseInt(target.css("padding-left") + target.css("padding-right") + target.css("border-width"));
-                        if(isNaN(p)){
-                            p=0;
-                        }
-                        w -= p;
-                        var fontWidth = (lines * w) / content.length;
-                        // 保留2.5行
-                        var leftChar = Math.floor((2.5 * w) / fontWidth);
-                        if(content.length > leftChar){
-                            target.html(content.substr(0,leftChar)+"...");
-                            target.attr(spanStateKey,stateCollapse+"");
-                            onSpanStateChange(obj,stateCollapse);
-                        }else{
-                            target.html(content);
-                            target.attr(spanStateKey,stateCollapse+"");
-                            onSpanStateChange(obj,stateCollapse);
-                        }
+                        target.attr(spanStateKey, stateCollapse + "");
+                        onSpanStateChange(obj, stateCollapse);
+                    }
 //                    }
-               }
-               
-               var spanContent = function(obj){
-                   var target = pj(obj);
-                   var originContent = target.attr(cacheContentKey);
-                   if(originContent){
-                       originContent = addHTMLNewlinesAndSpaces(originContent);
-                       
-                       target.html(originContent);
-                       target.attr(spanStateKey,stateSpan+"");
-                       onSpanStateChange(obj,stateSpan);
-                   }
-               };
-               
-               var onSpanStateChange = function(obj,state){
-                   var button = "";
-                   if(state === stateCollapse){
-                       button = "展开";
-                   }else{
-                       button = "收起";
-                   }
-                   pj("#span-collapse").html(button);
-               };
-               
-               var toggleSpan = function(obj){
-                   if(parseInt(pj(obj).attr(spanStateKey)) === stateSpan){
+                };
+
+                var spanContent = function (obj) {
+                    var target = pj(obj);
+                    var originContent = target.attr(cacheContentKey);
+                    if (originContent) {
+                        originContent = addHTMLNewlinesAndSpaces(originContent);
+
+                        target.html(originContent);
+                        target.attr(spanStateKey, stateSpan + "");
+                        onSpanStateChange(obj, stateSpan);
+                    }
+                };
+
+                var onSpanStateChange = function (obj, state) {
+                    var button = "";
+                    if (state === stateCollapse) {
+                        button = "展开";
+                    } else {
+                        button = "收起";
+                    }
+                    pj("#span-collapse").html(button);
+                };
+
+                var toggleSpan = function (obj) {
+                    if (parseInt(pj(obj).attr(spanStateKey)) === stateSpan) {
                         collapseContent(obj);
-                    }else{
+                    } else {
                         spanContent(obj);
                     }
-               };
-               
-               var initSpanObj = pj("#info-text-description").click(function(){
-                    toggleSpan(pj.id("info-text-description"));
+                };
+
+                var initSpanObj = pj("#info-text-description").click(function () {
+                    toggleSpan(this);
                 }).html(addHTMLNewlinesAndSpaces(pj("#info-text-description").html())).get();
-                pj("#span-collapse").click(function(){
+                pj("#span-collapse").click(function () {
                     toggleSpan(pj.id("info-text-description"));
                 });
-                
+
                 collapseContent(initSpanObj);
-           })();
-           
+            })();
+
         </script>
     </body>
 </html>
